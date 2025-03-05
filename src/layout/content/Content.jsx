@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Container, Row, Col } from 'react-bootstrap';
+import { Outlet } from 'react-router-dom';
 
 function Content() {
   return (
@@ -20,6 +21,9 @@ function Content() {
       </div>
     </Col>
   </Row>
+  <div className="content">
+    <Outlet />
+  </div>
 </Container>
 
   );

@@ -4,7 +4,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import React, { useState } from 'react';
 import Header from './layout/header/Header';
 import Sidebar from './layout/sidebar/Sidebar';
-import Content from './layout/content/Content';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routers from './components/Routers';
 
 
 function App() {
@@ -12,17 +13,20 @@ function App() {
 
   return (
     <>
+      <Router>
       <Header toggleSidebar={() => setShowSidebar(true)} />
       <div className="container-fluid">
         <div className="row App">
           {/* Sidebar always visible on large screens, offcanvas on small screens */}
-           <Sidebar show={showSidebar} handleClose={() => setShowSidebar(false)} />
-          
+           
+            <Sidebar show={showSidebar} handleClose={() => setShowSidebar(false)} />
+        
           <div className="content-area ">
-            <Content />
+            <Routers />
           </div>
         </div>
       </div>
+      </Router>
     </>
   )
 }

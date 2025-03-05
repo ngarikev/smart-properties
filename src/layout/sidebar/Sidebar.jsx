@@ -1,6 +1,7 @@
 import React from 'react';
 import { Offcanvas, Nav } from 'react-bootstrap';
 import StickyBox from 'react-sticky-box';
+import SidebarMenu from '../../components/SidebarMenu';
 
 
 function Sidebar({ show, handleClose }) {
@@ -10,24 +11,7 @@ function Sidebar({ show, handleClose }) {
       <StickyBox offsetTop={0} offsetBottom={0}>
       <div className="d-none d-md-block sidebar">
         <h5>Home</h5>
-        <Nav className="flex-column">
-          <Nav.Link href="#">Dashboard</Nav.Link>
-          <Nav.Link href="#">Orders</Nav.Link>
-          <Nav.Link href="#">Products</Nav.Link>
-          <Nav.Link href="#">Customers</Nav.Link>
-          <hr />
-          <Nav.Link href="#">Settings</Nav.Link>
-          <Nav.Link href="#">Sign out</Nav.Link>
-          <hr />
-
-          <Nav.Link href="#">Dashboard</Nav.Link>
-          <Nav.Link href="#">Orders</Nav.Link>
-          <Nav.Link href="#">Products</Nav.Link>
-          <Nav.Link href="#">Customers</Nav.Link>
-          <hr />
-          <Nav.Link href="#">Settings</Nav.Link>
-          <Nav.Link href="#">Sign out</Nav.Link>
-        </Nav>
+        <SidebarMenu />
       </div>
 
       {/* Offcanvas sidebar for small screens */}
@@ -37,13 +21,7 @@ function Sidebar({ show, handleClose }) {
         </Offcanvas.Header>
         <Offcanvas.Body className="d-flex flex-column">
           <Nav className="flex-column">
-            <Nav.Link href="#">Dashboard</Nav.Link>
-            <Nav.Link href="#">Orders</Nav.Link>
-            <Nav.Link href="#">Products</Nav.Link>
-            <Nav.Link href="#">Customers</Nav.Link>
-            <hr />
-            <Nav.Link href="#">Settings</Nav.Link>
-            <Nav.Link href="#">Sign out</Nav.Link>
+          <SidebarMenu />
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>
