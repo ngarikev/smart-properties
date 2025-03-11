@@ -17,9 +17,9 @@ function Header({ toggleSidebar }) {
         {/* Brand Name */}
         <Navbar.Brand href="#">Xyz Real Estate</Navbar.Brand>
         {/* Sidebar Toggle Button (Always visible on large screens) */}
-        <Button variant="light" className="toggler" onClick={toggleSidebar}>
+        {/* <Button variant="light" className="toggler" onClick={toggleSidebar}>
           &#9776;
-        </Button>
+        </Button> */}
         
         {/* Profile Dropdown */}
         <Dropdown align="end" className="ms-auto">
