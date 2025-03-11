@@ -1,9 +1,9 @@
 import React from 'react'
 
-function StaffManagement() {
+function Users() {
   return (
     <div>StaffManagement</div>
   )
 }
 
-export default StaffManagement
+export default Users

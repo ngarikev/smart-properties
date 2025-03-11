@@ -13,6 +13,7 @@ import {
  } from "react-icons/fa";
  import { FaGaugeSimpleHigh, FaHouse } from "react-icons/fa6";
  import { NavLink } from 'react-router-dom';
+import StaffManagement from './StaffManagement';
 
 
 function SidebarMenu( {show, isOpen} ) {
@@ -23,9 +24,7 @@ function SidebarMenu( {show, isOpen} ) {
       icon: <FaGaugeSimpleHigh />
     },
     {
-      path: "/staff-management",
-      name: "Staff Management",
-      icon: <FaUsers />
+      component: <StaffManagement />
     },
     {
       path: "/tenant",
@@ -55,10 +54,14 @@ function SidebarMenu( {show, isOpen} ) {
         //   {item.icon}
         //   <span className='ps-2' >{item.name}</span>
         // </NavLink>
+        item.component ? (
+          item.component
+        ) : (
         <NavLink to={item.path} key={index} className={({ isActive }) => isActive ? "link active" : "link"}>
-        <div className="icon">{item.icon}</div>
-        <div  className="link_text">{item.name}</div>
-    </NavLink>
+          <div className="icon">{item.icon}</div>
+          <div  className="link_text">{item.name}</div>
+        </NavLink>
+        )
       ))}
     </div>
   )

@@ -4,7 +4,7 @@ import Dashboard from '../pages/Dashboard'
 import Finance from '../pages/Finance'
 import Maintainers from '../pages/Maintainers'
 import RealEstate from '../pages/RealEstate'
-import StaffManagement from '../pages/StaffManagement'
+import Users from '../pages/Users'
 import Tenants from '../pages/Tenants'
 import Content from '../layout/content/Content'
 
@@ -18,7 +18,7 @@ function Routers() {
         <Route path="finance" element={<Finance />} />
         <Route path="maintainer" element={<Maintainers />} />
         <Route path="real-estate" element={<RealEstate />} />
-        <Route path="staff-management" element={<StaffManagement />} />
+        <Route path="users" element={<Users />} />
         <Route path="tenant" element={<Tenants />} />
       </Route>
      </Routes>
