@@ -17,7 +17,7 @@ function Sidebar({ show, handleClose }) {
       {/* Offcanvas sidebar for small screens */}
       <Offcanvas show={show} onHide={handleClose} backdrop={true} placement="start">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Company Name</Offcanvas.Title>
+          <Offcanvas.Title>Xyz Real Estate</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className="d-flex flex-column">
           <Nav className="flex-column">
