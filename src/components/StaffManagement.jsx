@@ -30,6 +30,7 @@ function StaffManagement() {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+    <hr />
     </>
   )
 }

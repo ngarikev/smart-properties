@@ -1,7 +1,6 @@
 import React from 'react'
 import { 
   FaUser,
-  FaUsers,
   FaUserPlus,
   // FaGaugeSimpleHigh,
   // FaHouse,
@@ -11,9 +10,10 @@ import {
   // FaBell,
   // FaGear
  } from "react-icons/fa";
- import { FaGaugeSimpleHigh, FaHouse } from "react-icons/fa6";
+ import { FaGaugeSimpleHigh } from "react-icons/fa6";
  import { NavLink } from 'react-router-dom';
 import StaffManagement from './StaffManagement';
+import RealEstate from './RealEstate';
 
 
 function SidebarMenu( {show, isOpen} ) {
@@ -37,9 +37,7 @@ function SidebarMenu( {show, isOpen} ) {
       icon: <FaUserPlus />
     },
     {
-      path: "/real-estate",
-      name: "Real Estate",
-      icon: <FaHouse />
+      component: <RealEstate />
     },
     {
       path: "/finance",
