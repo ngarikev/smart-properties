@@ -10,10 +10,10 @@ function StaffManagement() {
     ]
   return (
     <>
-    <Accordion flush>
+    <Accordion flush >
       <Accordion.Item eventKey="0">
-        <Accordion.Header className='accordion-header'>
-          <div className="d-flex align-items-center">
+        <Accordion.Header className="custom-accordion-header">
+          <div className="d-flex align-items-center w-100">
             <FaUsers className="me-2" />
             Staff Management
           </div>
