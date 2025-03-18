@@ -10,7 +10,6 @@ function Sidebar({ show, handleClose }) {
       {/* Sidebar visible on large screens */}
       <StickyBox offsetTop={0} offsetBottom={0}>
       <div className="d-none d-md-block sidebar">
-        <h5>Home</h5>
         <SidebarMenu />
       </div>
 
