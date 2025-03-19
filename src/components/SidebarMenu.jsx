@@ -5,7 +5,6 @@ import {
   // FaGaugeSimpleHigh,
   // FaHouse,
   // FaWrench,
-  FaFile,
   // FaPhoneVolume,
   // FaBell,
   // FaGear
@@ -14,6 +13,7 @@ import {
  import { NavLink } from 'react-router-dom';
 import StaffManagement from './StaffManagement';
 import RealEstate from './RealEstate';
+import Finance from './Finance';
 
 
 function SidebarMenu( {show, isOpen} ) {
@@ -40,9 +40,7 @@ function SidebarMenu( {show, isOpen} ) {
       component: <RealEstate />
     },
     {
-      path: "/finance",
-      name: "Finance",
-      icon: <FaFile />
+      component: <Finance />
     }
   ]
   return (

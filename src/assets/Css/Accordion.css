@@ -1,0 +1,31 @@
+
+/* Accordion Header Styling */
+.accordion-header {
+    background-color: #F4F5F9; /* Match sidebar */
+  }
+  
+  /* Override Bootstrap's default accordion button styles */
+  .accordion-button {
+    background-color: #F4F5F9 !important; /* Match sidebar */
+    color: #000; /* Adjust text color */
+    box-shadow: none;
+    border: none;
+  }
+  
+  /* Change background when expanded */
+  .accordion-button:not(.collapsed) {
+    background-color: #E0E0E0 !important; /* Optional: slight contrast when opened */
+    color: #000;
+  }
+  
+  /* Remove default arrow styling */
+  .accordion-button::after {
+    filter: invert(0.5); /* Subtle arrow color */
+  }
+  
+  /* Ensure accordion body also blends in */
+  .accordion-body {
+    background-color: #F4F5F9;
+    padding-left: 30px;
+  }
+  

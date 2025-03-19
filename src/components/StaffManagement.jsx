@@ -2,6 +2,7 @@ import React from 'react';
 import { Accordion } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { FaUsers } from 'react-icons/fa';
+import '../assets/Css/Accordion.css'
 
 function StaffManagement() {
     const subItems =[

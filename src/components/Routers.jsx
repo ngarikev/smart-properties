@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard'
-import Finance from '../pages/Finance'
+import Finance from './Finance'
 import Maintainers from '../pages/Maintainers'
 import RealEstate from './RealEstate'
 import Users from '../pages/Users'

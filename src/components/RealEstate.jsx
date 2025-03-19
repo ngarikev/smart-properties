@@ -2,6 +2,7 @@ import React from 'react';
 import { Accordion } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { FaHouse } from "react-icons/fa6";
+import '../assets/Css/Accordion.css'
 
 function RealEstate() {
   const estateItems = [
