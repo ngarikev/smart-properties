@@ -10,16 +10,19 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px; /* Adjust width if needed */
+  width: 280px; /* Adjust width if needed */
   height: 100vh;
   background-color: #F4F5F9;
   padding: 80px 10px;
   overflow-y: auto; /* Prevent scrolling */
 }
+.sidebar-title{
+  font-size: 1rem;
+}
 .link{
   text-decoration: none;
   display: flex;
-  color: #000;
+  color: #555;
   padding: 10px 15px;
   gap: 15px;
   border-radius: 5px;
@@ -44,9 +47,9 @@
 /* content area */
 
 .content-area {
-  margin-left: 250px; /* Ensure it starts after the sidebar */
+  margin-left: 280px; /* Ensure it starts after the sidebar */
   padding: 20px; /* Add padding to prevent sticking to the edges */
-  width: calc(100% - 250px); /* Take full width minus sidebar */
+  width: calc(100% - 280px); /* Take full width minus sidebar */
   min-height: 100vh; /* Ensure full height */
   background-color: #fff; /* Optional: match background */
 }

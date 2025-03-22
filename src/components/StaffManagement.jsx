@@ -14,7 +14,7 @@ function StaffManagement() {
     <Accordion flush >
       <Accordion.Item eventKey="0">
         <Accordion.Header className="custom-accordion-header">
-          <div className="d-flex align-items-center w-100">
+          <div className="d-flex align-items-center w-100" style={{color: "#555"}}>
             <FaUsers className="me-2" />
             Staff Management
           </div>
@@ -32,6 +32,7 @@ function StaffManagement() {
       </Accordion.Item>
     </Accordion>
     <hr />
+    <h5 className='px-2 py-3 sidebar-title'>Business Management</h5>
     </>
   )
 }

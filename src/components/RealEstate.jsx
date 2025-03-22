@@ -14,7 +14,7 @@ function RealEstate() {
         <Accordion flush >
           <Accordion.Item eventKey="0">
             <Accordion.Header className="custom-accordion-header">
-              <div className="d-flex align-items-center w-100">
+              <div className="d-flex align-items-center w-100" style={{color: "#555"}}>
                 <FaHouse className="me-2" />
                 Real Estate
               </div>

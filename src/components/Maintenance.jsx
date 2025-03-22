@@ -1,22 +1,21 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import { FaFile } from 'react-icons/fa';
-import '../assets/Css/Accordion.css'
+import { FaWrench } from 'react-icons/fa6';
 
-function Finance() {
-  const subItems =[
-    { path:"/invoices", name: "Invoices" },
-    { path:"/expense", name: "Expense" },
-  ]
+function Maintenance() {
+    const subItems =[
+        { path:"/invoices", name: "Invoices" },
+        { path:"/expense", name: "Expense" },
+      ]
   return (
     <>
             <Accordion flush >
               <Accordion.Item eventKey="0">
                 <Accordion.Header className="custom-accordion-header">
                   <div className="d-flex align-items-center w-100" style={{color: "#555"}}>
-                    <FaFile className="me-2" />
-                    Finance
+                    <FaWrench className="me-2" />
+                    Maintenance
                   </div>
                 </Accordion.Header>
                 <Accordion.Body>
@@ -35,4 +34,4 @@ function Finance() {
   )
 }
 
-export default Finance
+export default Maintenance

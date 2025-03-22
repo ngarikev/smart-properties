@@ -9,38 +9,42 @@ import {
   // FaBell,
   // FaGear
  } from "react-icons/fa";
- import { FaGaugeSimpleHigh } from "react-icons/fa6";
+ import { FaBriefcase, FaGaugeSimpleHigh, FaPhoneVolume } from "react-icons/fa6";
  import { NavLink } from 'react-router-dom';
 import StaffManagement from './StaffManagement';
 import RealEstate from './RealEstate';
 import Finance from './Finance';
+import Maintenance from './Maintenance';
 
 
 function SidebarMenu( {show, isOpen} ) {
   const menuItems = [
     {
-      path: "/",
-      name: "Dashboard",
-      icon: <FaGaugeSimpleHigh />
+      path: "/", name: "Dashboard", icon: <FaGaugeSimpleHigh />
     },
     {
       component: <StaffManagement />
     },
     {
-      path: "/tenant",
-      name: "Tenant",
-      icon: <FaUser />
+      path: "/tenant", name: "Tenant", icon: <FaUser />
     },
     {
-      path: "/maintainer",
-      name: "Maintainers",
-      icon: <FaUserPlus />
+      path: "/maintainer", name: "Maintainers", icon: <FaUserPlus />
     },
     {
       component: <RealEstate />
     },
     {
+      component: <Maintenance />
+    },
+    {
       component: <Finance />
+    },
+    {
+      path: "/contacts-diary", name: "Contact Diary", icon: <FaPhoneVolume />
+    },
+    {
+      path: "/types", name: "Types", icon: <FaBriefcase />
     }
   ]
   return (
