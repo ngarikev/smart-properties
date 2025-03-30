@@ -17,7 +17,7 @@ import Login from '../pages/Authentication/Login' // Add your login component
 import useAuth from '../hooks/useAuth' // Create this custom hook
 import AuthLayout from '../layout/AuthLayout' // Your AuthLayout component
 
-import AllRequests from'../pages/AllRequests'
+import AllRequests from '../pages/AllRequests'
 import Pending from '../pages/Pending'
 import InProgress from '../pages/InProgress'
 
@@ -25,7 +25,6 @@ import InProgress from '../pages/InProgress'
 
 function Routers() {
   const { isAuthenticated } = useAuth()
-  console.log("🚀 ~ Routers ~ isAuthenticated:", isAuthenticated)
   return (
     <div>
       <Routes>
@@ -50,9 +49,9 @@ function Routers() {
           <Route path="invoices" element={<Invoices />} />
           <Route path="expense" element={<Expense />} />
           <Route path="maintenance-request" element={<AllRequests />} />
-        <Route path="maintenance-request/pending" element={<Pending />} />
-        <Route path="maintenance-request/in-progress" element={<InProgress />} />
-      </Route>
+          <Route path="maintenance-request/pending" element={<Pending />} />
+          <Route path="maintenance-request/in-progress" element={<InProgress />} />
+        </Route>
 
         {/* Redirects */}
         {/* <Route path="/login" element={<Navigate to="/auth/login" replace />} />
