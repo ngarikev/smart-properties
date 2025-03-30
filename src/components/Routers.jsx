@@ -13,6 +13,10 @@ import ContactDiary from '../pages/ContactDiary'
 import Types from '../pages/Types'
 import Invoices from '../pages/Invoices'
 import Expense from '../pages/Expense'
+import AllRequests from'../pages/AllRequests'
+import Pending from '../pages/Pending'
+import InProgress from '../pages/InProgress'
+
 
 
 function Routers() {
@@ -32,6 +36,9 @@ function Routers() {
         <Route path="types" element={<Types />} />
         <Route path="invoices" element={<Invoices />} />
         <Route path="expense" element={<Expense />} />
+        <Route path="maintenance-request" element={<AllRequests />} />
+        <Route path="maintenance-request/pending" element={<Pending />} />
+        <Route path="maintenance-request/in-progress" element={<InProgress />} />
       </Route>
      </Routes>
     </div>
