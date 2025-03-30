@@ -5,8 +5,9 @@ import { FaWrench } from 'react-icons/fa6';
 
 function Maintenance() {
     const subItems =[
-        { path:"/invoices", name: "Invoices" },
-        { path:"/expense", name: "Expense" },
+        { path:"/maintenance-request", name: "All Requests" },
+        { path:"/maintenance-request/pending", name: "Pending" },
+        { path:"/maintenance-request/in-progress", name: "In Progress" },
       ]
   return (
     <>
