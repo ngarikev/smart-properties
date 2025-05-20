@@ -26,7 +26,6 @@ const Login = () => {
       setError('');
       setLoading(true);
       await login(values.email, values.password);
-      navigate('/');
     } catch (err) {
       setError(err.message || 'Failed to log in');
     } finally {
